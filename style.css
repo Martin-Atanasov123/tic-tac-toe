@@ -1,0 +1,100 @@
+body {
+    background: #1E1E2E;
+    color: dimgray;
+    font-family: serif;
+    text-align: center;
+    margin-top: 10em;
+}
+
+h1 {
+    font-size: 2rem;
+    color: ghostwhite;
+}
+
+p {
+    font-size: 1.5rem;
+    color: ghostwhite;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.winner {
+    background-color: gold;
+    color: white;
+    font-weight: bold;
+}
+
+.draw {
+    background-color: lightgray;
+}
+
+.occupied {
+    pointer-events: none;
+}
+
+#reset-button {
+    margin-top: 20px;
+    padding: 1em;
+    border-radius: 1em;
+    font: large sans-serif;
+    background-color: purple;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#reset-button:hover {
+    background-color: rgb(94, 1, 94);
+    
+}
+
+.box {
+    display: inline-block;
+    cursor: pointer;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 7px;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    background-color: rgb(169, 170, 170);
+    background-color: #444444;
+    border: 1px solid gray;
+    font-size: 50px;
+}
+
+.box:hover {
+    background-color: rgb(218, 216, 216);
+}
+
+span {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    font-size: 75px;
+    font-family: sans-serif;
+    text-align: center;
+    line-height: 100px; /* Vertically center X and O */
+}
+
+button {
+    background: dimgray;
+    border-radius: 2px;
+    color: ghostwhite;
+    border: none;
+    outline: none;
+}
+
+button:focus {
+    background: silver;
+}
+
+.alert {
+    margin-top: 10px;
+    font-size: 1rem;
+}
